@@ -8,6 +8,22 @@
 
         #endregion Variables
 
+        public double X
+        {
+            get { return x; }
+            set
+            {
+                //ternary operator
+                x = value < 0 ? 0 : value;
+            }
+        }
+
+        public double Y
+        {
+            //classes with getter only properties - IMMUTABLE
+            get { return y; }
+        }
+
         #region Constructors
 
         //public Vector3()
