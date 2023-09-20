@@ -3,6 +3,10 @@
 ## Overview ##
 This repository contains code samples used to learn the basics of C# in preparation for the development of the code for this module.
 
+## Useful ##
+
+- Add emojis with [gitmoji](https://gitmoji.dev/) to your Git commits to improve readability
+
 ## Table of Contents ##
 | Topic | Description | Additional Reading |
 | :---------------- | :--------------- | :--------------- | 
