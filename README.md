@@ -5,7 +5,7 @@ This repository contains code samples used to learn the basics of C# in preparat
 
 ## Table of Contents ##
 | Topic | Description | Additional Reading |
-| :---------------- | :--------------- | :--------------- | :--------------- | 
+| :---------------- | :--------------- | :--------------- | 
 | Namespace definition | Defining namespaces  | [Namespace](https://www.tutorialspoint.com/csharp/csharp_namespaces.htm) |
 | Class definition | Class, constructor, variables, ToString, GetHashCode |  [Class & Object](https://www.geeksforgeeks.org/c-sharp-class-and-object/) |
 | String interpolation | Simplify the formatting and output of strings containing variables and code snippets |  [String interpolation](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated) |
