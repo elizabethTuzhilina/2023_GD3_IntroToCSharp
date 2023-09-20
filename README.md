@@ -7,6 +7,8 @@ This repository contains code samples used to learn the basics of C# in preparat
 | Topic | Description | Additional Reading |
 | :---------------- | :--------------- | :--------------- | 
 | Namespace definition | Defining namespaces  | [Namespace](https://www.tutorialspoint.com/csharp/csharp_namespaces.htm) |
+| Value and reference types | Passing by reference and by value | [Value type and Reference type](https://www.tutorialsteacher.com/csharp/csharp-value-type-and-reference-type)
+| Keywords (ref, out) | Passing a value type by reference and returning multiple variables using 'out' | [ref](https://www.geeksforgeeks.org/ref-in-c-sharp/), [out](https://www.geeksforgeeks.org/out-parameter-with-examples-in-c-sharp/)
 | Class definition | Class, constructor, variables, ToString, GetHashCode |  [Class & Object](https://www.geeksforgeeks.org/c-sharp-class-and-object/) |
 | String interpolation | Simplify the formatting and output of strings containing variables and code snippets |  [String interpolation](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated) |
 | Constructor chaining | Calling one constructor from another | [Constructor Chaining](https://www.delftstack.com/howto/csharp/constructor-chaining-in-csharp/) |
@@ -22,6 +24,8 @@ This repository contains code samples used to learn the basics of C# in preparat
 | Func & Action | Passing functions as a parameter | [Func](https://www.tutorialsteacher.com/csharp/csharp-func-delegate), [Action](https://www.tutorialsteacher.com/csharp/csharp-action-delegate) |
 
 ### To Do - Week 1
+- [ ] Add namespace, static demos
+- [ ] Use 'ref' and 'out' keywords in a function call
 - [ ] Add demo class(es)
 - [ ] Add constructor chaining
 - [ ] Add properties (set/get)
@@ -32,5 +36,4 @@ This repository contains code samples used to learn the basics of C# in preparat
 - [ ] Add intellisense regions to organise our code
 - [ ] Add demo for deep/shallow copy using Clone
 - [ ] Use 'as' keyword to perform a typecast
-- [ ] Use 'ref' and 'out' keywords in a function call
-- [ ] ...to do...
+- [ ] ...to do...(delegate, readonly etc)
