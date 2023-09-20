@@ -18,7 +18,7 @@ namespace GD
 
         public void Start()
         {
-            int a = 10;
+            int a = 15;
             int b = 50;
             Swap(ref a, ref b);
             // Console.WriteLine("a: " + a + "," + "b: " + b);

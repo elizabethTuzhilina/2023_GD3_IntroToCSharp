@@ -28,12 +28,12 @@ This repository contains code samples used to learn the basics of C# in preparat
 | Func & Action | Passing functions as a parameter | [Func](https://www.tutorialsteacher.com/csharp/csharp-func-delegate), [Action](https://www.tutorialsteacher.com/csharp/csharp-action-delegate) |
 
 ### To Do - Week 1
-- [ ] Add namespace, static demos
+- [x] Add namespace, static demos
 - [ ] Use 'ref' and 'out' keywords in a function call
 - [ ] Add demo class(es)
 - [ ] Add constructor chaining
 - [ ] Add properties (set/get)
-- [ ] Add string interpolation demo
+- [x] Add string interpolation demo
 - [ ] Add validation on set properties
 - [ ] Add protected on set properties
 - [ ] Add static readonly constants (e.g. Vector3.Zero)

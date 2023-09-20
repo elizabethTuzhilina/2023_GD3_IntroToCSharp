@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GD.Examples.Classes
+﻿namespace GD.Examples.Classes
 {
     internal class Player
     {
