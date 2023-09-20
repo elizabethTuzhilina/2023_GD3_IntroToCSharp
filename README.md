@@ -19,7 +19,7 @@ This repository contains code samples used to learn the basics of C# in preparat
 | Lambda Expressions | Using a Lambda Expression to find in a List<T> | [Lambda Expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions) |
 | enum | Using an enum to represent a fixed set of player types, sorting by enum | [C# Enumeration (or enum)](https://www.geeksforgeeks.org/c-sharp-enumeration-or-enum/) |
 | Predicate | How to use a Predicate in the List class, how to pass a Predicate as a parameter | [Predicate](https://www.tutorialsteacher.com/csharp/csharp-predicate) |
-| Func & Action | [Func](https://www.tutorialsteacher.com/csharp/csharp-func-delegate), [Action](https://www.tutorialsteacher.com/csharp/csharp-action-delegate) |
+| Func & Action | Passing functions as a parameter | [Func](https://www.tutorialsteacher.com/csharp/csharp-func-delegate), [Action](https://www.tutorialsteacher.com/csharp/csharp-action-delegate) |
 
 ### To Do - Week 1
 - [ ] Add demo class(es)
