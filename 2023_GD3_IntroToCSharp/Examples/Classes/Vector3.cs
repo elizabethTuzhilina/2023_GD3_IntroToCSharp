@@ -42,5 +42,9 @@
         }
 
         #endregion Constructors
+
+        /*
+         * Add ToString, GetHashCode, Equals, Clone, GetShallowCopy, operator overloading
+         */
     }
 }

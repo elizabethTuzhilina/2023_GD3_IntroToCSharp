@@ -29,15 +29,16 @@ This repository contains code samples used to learn the basics of C# in preparat
 
 ### To Do - Week 1
 - [x] Add namespace, static demos
-- [ ] Use 'ref' and 'out' keywords in a function call
-- [ ] Add demo class(es)
-- [ ] Add constructor chaining
-- [ ] Add properties (set/get)
-- [x] Add string interpolation demo
-- [ ] Add validation on set properties
-- [ ] Add protected on set properties
-- [ ] Add static readonly constants (e.g. Vector3.Zero)
-- [ ] Add intellisense regions to organise our code
-- [ ] Add demo for deep/shallow copy using Clone
+- [x] Use 'ref' in a function call (see Program)
+- [ ] Use 'out' in a function call (see Program)
+- [x] Add demo class(es) (see Vector3, Player, PlayerList)
+- [x] Add constructor chaining (see Vector3)
+- [x] Add properties (set/get) (see Vector3)
+- [x] Add string interpolation demo (see Program, Vector3::ToString)
+- [x] Add validation on set properties (see Vector3::X with ternary)
+- [ ] Add protected on set properties (see Vector3)
+- [ ] Add static readonly constants (e.g. Vector3.Zero) (see Vector3)
+- [x] Add intellisense regions to organise our code (see Vector3)
+- [ ] Add demo for deep/shallow copy using Clone (see Vector3)
 - [ ] Use 'as' keyword to perform a typecast
 - [ ] ...to do...(delegate, readonly etc)

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examples\Classes\NamespaceDemo.cs" />
     <Compile Include="Examples\Classes\Player.cs" />
     <Compile Include="Examples\Classes\Vector3.cs" />
     <Compile Include="Program.cs" />

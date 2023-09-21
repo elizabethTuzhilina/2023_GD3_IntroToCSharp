@@ -18,12 +18,44 @@ namespace GD
 
         public void Start()
         {
+            DemoStringInterpolation();
+            DemoPassByReference();
+
+            DemoProperties();
+            DemoHashEquals();
+            DemoDeepShallow();
+
+            Console.ReadLine();
+        }
+
+        private void DemoDeepShallow()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DemoStringInterpolation()
+        {
+            int a = 15;
+            int b = 50;
+            // Console.WriteLine("a: " + a + "," + "b: " + b);
+            Console.WriteLine($"a:{a}, b:{b} and sum is {a + b}");
+        }
+
+        private void DemoPassByReference()
+        {
             int a = 15;
             int b = 50;
             Swap(ref a, ref b);
-            // Console.WriteLine("a: " + a + "," + "b: " + b);
-            Console.WriteLine($"a:{a}, b:{b} and sum is {a + b}");
-            Console.ReadLine();
+        }
+
+        private void DemoProperties()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DemoHashEquals()
+        {
+            throw new NotImplementedException();
         }
 
         public void Swap(ref int x, ref int y)
