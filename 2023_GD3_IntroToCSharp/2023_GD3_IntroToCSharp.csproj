@@ -43,9 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examples\ActivationType.cs" />
     <Compile Include="Examples\Classes\NamespaceDemo.cs" />
     <Compile Include="Examples\Classes\Player.cs" />
     <Compile Include="Examples\Classes\Vector3.cs" />
+    <Compile Include="Examples\Controllers\BadPlayerController.cs" />
+    <Compile Include="Examples\Controllers\PlayerController.cs" />
+    <Compile Include="Examples\PlayerType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

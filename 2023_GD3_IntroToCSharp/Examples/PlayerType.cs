@@ -1,10 +1,11 @@
 ﻿namespace GD
 {
-    public enum PlayerType
+    //a user-defined data type with a fixed set of options
+    public enum PlayerType : sbyte
     {
-        Scout,
-        Mage,
-        Thief,
-        Priest
+        Scout = 1,
+        Mage = 2,
+        Thief = 3,
+        Priest = 4,
     }
 }

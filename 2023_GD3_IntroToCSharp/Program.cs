@@ -1,6 +1,7 @@
 ﻿using GD.Core.Graphics;
 using GD.Examples.Classes;
 using System;
+using System.Collections.Generic;
 
 namespace GD
 {
@@ -26,12 +27,32 @@ namespace GD
             //   DemoDeepShallow();
             DemoEnum();
 
+            DemoUpgradingPlayers();
+
             Console.ReadLine();
+        }
+
+        private void DemoUpgradingPlayers()
+        {
+            //make list for players
+            List<Player> pList = new List<Player>();
+
+            //add N players
+            pList.Add(new Player("p1", 75, 34, PlayerType.Thief));
+            pList.Add(new Player("p2", 98, 56, PlayerType.Mage));
+            pList.Add(new Player("p3", 10, 1, PlayerType.Scout));
+
+            //we want to upgrade them
+
+            //promote player type
+            //increase and reset max health
         }
 
         private void DemoEnum()
         {
-            Player p1 = new Player("max", 50, 1000, "scout");
+            Player p1 = new Player("max", 50, 1000, PlayerType.Thief);
+            Console.WriteLine(PlayerType.Mage);
+            Console.WriteLine((int)PlayerType.Mage);
         }
 
         private void DemoDeepShallow()
