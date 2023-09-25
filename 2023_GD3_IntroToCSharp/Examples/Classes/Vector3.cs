@@ -1,4 +1,6 @@
-﻿namespace GD.Examples.Classes
+﻿using System;
+
+namespace GD.Examples.Classes
 {
     public class Vector3
     {
@@ -7,6 +9,8 @@
         private double x, y, z;
 
         #endregion Variables
+
+        #region Properties
 
         public double X
         {
@@ -23,6 +27,8 @@
             //classes with getter only properties - IMMUTABLE
             get { return y; }
         }
+
+        #endregion Properties
 
         #region Constructors
 
@@ -46,5 +52,37 @@
         /*
          * Add ToString, GetHashCode, Equals, Clone, GetShallowCopy, operator overloading
          */
+
+        public override string ToString()
+        {
+            return $"({x},{y},{z}])";
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Vector3 vector &&
+                   x == vector.X &&
+                   y == vector.Y;
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = 373119288;
+            hashCode = hashCode * -1521134295 + x.GetHashCode();
+            hashCode = hashCode * -1521134295 + y.GetHashCode();
+            hashCode = hashCode * -1521134295 + z.GetHashCode();
+            return hashCode;
+        }
+
+        //public override bool Equals(object obj)
+        //{
+        //    Vector3 other = obj as Vector3;
+
+        //    if (other == null)
+        //        new ArgumentException("obj is not a Vector3!");
+
+        //    return x == other.X &&
+        //           y == other.Y;
+        //}
     }
 }

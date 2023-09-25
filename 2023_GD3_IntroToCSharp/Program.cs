@@ -1,6 +1,6 @@
 ﻿using GD.Core.Graphics;
+using GD.Examples.Classes;
 using System;
-using System.Security.Permissions;
 
 namespace GD
 {
@@ -21,11 +21,17 @@ namespace GD
             DemoStringInterpolation();
             DemoPassByReference();
 
-            DemoProperties();
+            //DemoProperties();
             DemoHashEquals();
-            DemoDeepShallow();
+            //   DemoDeepShallow();
+            DemoEnum();
 
             Console.ReadLine();
+        }
+
+        private void DemoEnum()
+        {
+            Player p1 = new Player("max", 50, 1000, "scout");
         }
 
         private void DemoDeepShallow()
@@ -55,7 +61,15 @@ namespace GD
 
         private void DemoHashEquals()
         {
-            throw new NotImplementedException();
+            //equals
+            Vector3 newPickup = new Vector3(1, 2, 3);
+
+            Vector3 currentPickup = new Vector3(10, 20, 30);
+
+            if (newPickup.Equals(""))
+                Console.WriteLine("Same vector3!");
+            else
+                Console.WriteLine("Different vector3!");
         }
 
         public void Swap(ref int x, ref int y)
