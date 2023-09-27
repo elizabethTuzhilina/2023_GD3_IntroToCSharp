@@ -1,5 +1,6 @@
 ﻿using GD.Core.Graphics;
 using GD.Examples.Classes;
+using GD.Interfaces;
 using System;
 using System.Collections.Generic;
 
@@ -29,7 +30,32 @@ namespace GD
 
             DemoUpgradingPlayers();
 
+            DemoAbstractInterface();  ////////////////////////////////////
+
             Console.ReadLine();
+        }
+
+        private void DemoAbstractInterface()
+        {
+            //IGenerateRoute route1 = new IGenerateRoute();  //NEVER INSTANCIATE INTERFACE
+
+            IGenerateRoute walkRoute1 = new GenerateWalkingRoute();
+            IGenerateRoute drivingRoute1 = new GenerateDrivingRoute();
+            GenerateWalkingRoute walkRoute2 = new GenerateWalkingRoute();
+        }
+
+        public void PlanRoute(Vector3 start, Vector3 end, IGenerateRoute router)
+        {
+            List<Vector3> theRoute = router.GetRoute(start, end);
+        }
+
+        public void GetAllRoutes(Vector3 start, Vector3 end, List<IGenerateRoute> routers)
+        {
+            foreach (IGenerateRoute router in routers)
+            {
+                List<Vector3> theRoute = router.GetRoute(start, end);
+                Console.WriteLine($"the route for {start} to {end} is {theRoute}");
+            }
         }
 
         private void DemoUpgradingPlayers()
