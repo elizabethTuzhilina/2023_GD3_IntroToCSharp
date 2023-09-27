@@ -2,31 +2,64 @@
 
 namespace GD.Controller
 {
-    public interface IUpgradePlayer
+    public class GameObject
     {
-        public bool Execute(Player p);
+        //id, transform(position, rotation, scale)
     }
 
-    public class UpgradePlayerHealth : IUpgradePlayer
+    public interface IUpgradeGameObject
     {
-        public bool Execute(Player p)
+        bool Upgrade(GameObject gameObj);
+    }
+
+    public class UpgradePlayerType : IUpgradeGameObject
+    {
+        public bool Upgrade(GameObject gameObj)
         {
-            //do something to health
+            Player p = gameObj as Player;
+            if (p == null) return false;
+
+            int typeAsInt = (int)p.Type;
+            typeAsInt++;
+            //NMCG - magic numbers. wtf?
+            typeAsInt %= 4;
+            p.Type = (PlayerType)typeAsInt;
+
+            return true;
         }
     }
 
-    public class PlayerController
+    public class UpgradePlayerHealth : IUpgradeGameObject
     {
-        private List<Player> list;
-        private IUpgradePlayer upgradePlayer;
-        private IResetPlayer resetPlayer;
+        private int newHealth;
 
-        public void Execute()
+        public UpgradePlayerHealth(int newHealth)
+        { this.newHealth = newHealth; }
+
+        public bool Upgrade(GameObject gameObj)
         {
-            foreach (Player p in list)
+            Player p = gameObj as Player;
+            if (p == null) return false;
+
+            p.Health = newHealth;
+            return true;
+        }
+    }
+
+    public class GameObjectUpgradeController
+    {
+        private List<IUpgradeGameObject> listOfUpgrades;
+
+        public void Add(IUpgradeGameObject upgrader)
+        {
+            listOfUpgrades.Add(upgrader);
+        }
+
+        public void Apply(GameObject gameObj)
+        {
+            foreach (IUpgradeGameObject upgrader in listOfUpgrades)
             {
-                upgradePlayer.Execute(p);
-                resetPlayer.Execute(p);
+                upgrader.Upgrade(gameObj);
             }
         }
     }

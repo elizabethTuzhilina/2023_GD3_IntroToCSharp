@@ -1,6 +1,8 @@
-﻿namespace GD
+﻿using GD.Controller;
+
+namespace GD
 {
-    public class Player
+    public class Player : GameObject
     {
         private string name;
         private int health;
