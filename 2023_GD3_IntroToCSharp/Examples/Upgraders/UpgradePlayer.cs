@@ -1,17 +1,5 @@
-﻿using System.Collections.Generic;
-
-namespace GD.Controller
+﻿namespace GD
 {
-    public class GameObject
-    {
-        //id, transform(position, rotation, scale)
-    }
-
-    public interface IUpgradeGameObject
-    {
-        bool Upgrade(GameObject gameObj);
-    }
-
     public class UpgradePlayerType : IUpgradeGameObject
     {
         public bool Upgrade(GameObject gameObj)
@@ -43,24 +31,6 @@ namespace GD.Controller
 
             p.Health = newHealth;
             return true;
-        }
-    }
-
-    public class GameObjectUpgradeController
-    {
-        private List<IUpgradeGameObject> listOfUpgrades;
-
-        public void Add(IUpgradeGameObject upgrader)
-        {
-            listOfUpgrades.Add(upgrader);
-        }
-
-        public void Apply(GameObject gameObj)
-        {
-            foreach (IUpgradeGameObject upgrader in listOfUpgrades)
-            {
-                upgrader.Upgrade(gameObj);
-            }
         }
     }
 }

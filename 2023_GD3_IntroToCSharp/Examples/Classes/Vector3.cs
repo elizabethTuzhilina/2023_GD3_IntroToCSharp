@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GD.Examples.Classes
+﻿namespace GD
 {
     public class Vector3
     {

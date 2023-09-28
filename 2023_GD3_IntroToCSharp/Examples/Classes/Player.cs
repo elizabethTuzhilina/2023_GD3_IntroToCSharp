@@ -1,6 +1,4 @@
-﻿using GD.Controller;
-
-namespace GD
+﻿namespace GD
 {
     public class Player : GameObject
     {
