@@ -22,7 +22,9 @@
         private int newHealth;
 
         public UpgradePlayerHealth(int newHealth)
-        { this.newHealth = newHealth; }
+        {
+            this.newHealth = newHealth;
+        }
 
         public bool Upgrade(GameObject gameObj)
         {

@@ -1,4 +1,5 @@
-﻿using GD.Core.Graphics;
+﻿using GD.Controller;
+using GD.Core.Graphics;
 using GD.Examples.Classes;
 using GD.Interfaces;
 using System;
@@ -37,15 +38,16 @@ namespace GD
 
         private void DemoStrategyPattern()
         {
-            //make list for players
-            List<Player> pList = new List<Player>();
-
-            //add N players
-            pList.Add(new Player("p1", 75, 34, PlayerType.Thief));
-            pList.Add(new Player("p2", 98, 56, PlayerType.Mage));
-            pList.Add(new Player("p3", 10, 1, PlayerType.Scout));
+            Player p1 = new Player("p1", 75, 34, PlayerType.Thief);
 
             //use the controller...
+            GameObjectUpgradeController playerUpgradeController
+                = new GameObjectUpgradeController();
+
+            playerUpgradeController.Add(new UpgradePlayerHealth(200));
+            playerUpgradeController.Add(new UpgradePlayerType());
+
+            playerUpgradeController.Upgrade(p1);
         }
 
         private void DemoAbstractFactoryPattern()
@@ -75,6 +77,7 @@ namespace GD
                  new GenerateDrivingRoute(),
                  new GenerateWalkingRoute()
             };
+            // routers.Add(new GenerateDrivingRoute());
 
             //calculate the route for all modes of transport (walk, drive)
             GetAllRoutes(start, end, routers);
@@ -154,3 +157,13 @@ namespace GD
         }
     }
 }
+
+/*
+     //make list for players
+            List<Player> pList = new List<Player>();
+
+            //add N players
+            pList.Add(new Player("p1", 75, 34, PlayerType.Thief));
+            pList.Add(new Player("p2", 98, 56, PlayerType.Mage));
+            pList.Add(new Player("p3", 10, 1, PlayerType.Scout));
+ */
