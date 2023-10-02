@@ -1,8 +1,8 @@
 ﻿using GD.Controller;
 using GD.Core.Graphics;
-using GD.Examples.Classes;
 using GD.Interfaces;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace GD
@@ -22,18 +22,99 @@ namespace GD
         public void Start()
         {
             //core
+
+            #region Classes, properies, string interpolation etc
+
+            Console.WriteLine("\n********** DemoStringInterpolation **********");
             DemoStringInterpolation();
+
+            Console.WriteLine("\n********** DemoPassByReference **********");
             DemoPassByReference();
+
+            Console.WriteLine("\n********** DemoProperties **********");
             DemoProperties();
+
+            Console.WriteLine("\n********** DemoHashEquals **********");
             DemoHashEquals();
+
+            Console.WriteLine("\n********** DemoEnum **********");
             DemoEnum();
 
-            //design pattern related
+            Console.WriteLine("\n********** DemoDeepShallow **********");
+            DemoDeepShallow();
+
+            #endregion Classes, properies, string interpolation etc
+
+            #region Design pattern related
+
+            Console.WriteLine("\n********** DemoStringInterpolation **********");
             DemoAbstractFactoryPattern();
+
+            Console.WriteLine("\n********** DemoStringInterpolation **********");
             DemoStrategyPattern();
+
+            #endregion Design pattern related
+
+            #region Collections and sorting
+
+            Console.WriteLine("\n********** DemoCoreCollections **********");
+            DemoCoreCollections();
+            Console.WriteLine("\n********** DemoSortingWithIComparer **********");
+            DemoSortingWithIComparer();
+
+            #endregion Collections and sorting
+
+            #region Func, Predicate, Lambda
+
+            Console.WriteLine("\n********** DemoFunc **********");
+            DemoFunc();
+            Console.WriteLine("\n********** DemoFilterWithPredicate **********");
+            DemoFilterWithPredicate();
+            Console.WriteLine("\n********** DemoFilterWithLambda **********");
+            DemoFilterWithLambda();
+
+            #endregion Func, Predicate, Lambda
 
             //a pause to stop the command prompt closing
             Console.ReadLine();
+        }
+
+        private void DemoFunc()
+        {
+            //   throw new NotImplementedException();
+        }
+
+        private void DemoFilterWithPredicate()
+        {
+            //    throw new NotImplementedException();
+        }
+
+        private void DemoFilterWithLambda()
+        {
+            //  throw new NotImplementedException();
+        }
+
+        private void DemoCoreCollections()
+        {
+            //arraylist
+
+            //list
+
+            //sortedlist
+
+            //dictionary
+
+            //hashset
+        }
+
+        private void DemoSortingWithIComparer()
+        {
+            //    throw new NotImplementedException();
+        }
+
+        private void DemoDeepShallow()
+        {
+            //    throw new NotImplementedException();
         }
 
         private void DemoStrategyPattern()
@@ -41,8 +122,7 @@ namespace GD
             Player p1 = new Player("p1", 75, 34, PlayerType.Thief);
 
             //use the controller...
-            GameObjectUpgradeController playerUpgradeController
-                = new GameObjectUpgradeController();
+            GameObjectUpgradeController playerUpgradeController = new GameObjectUpgradeController();
 
             playerUpgradeController.Add(new UpgradePlayerHealth(200));
             playerUpgradeController.Add(new UpgradePlayerType());
@@ -103,11 +183,6 @@ namespace GD
             Player p1 = new Player("max", 50, 1000, PlayerType.Thief);
             Console.WriteLine(PlayerType.Mage);
             Console.WriteLine((int)PlayerType.Mage);
-        }
-
-        private void DemoDeepShallow()
-        {
-            throw new NotImplementedException();
         }
 
         private void DemoStringInterpolation()

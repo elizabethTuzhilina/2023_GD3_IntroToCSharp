@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C8CC255B-6C98-4494-8DB6-9F201026E3F2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2023_GD3_IntroToCSharp</RootNamespace>
+    <RootNamespace>GD</RootNamespace>
     <AssemblyName>2023_GD3_IntroToCSharp</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -51,6 +51,7 @@
     <Compile Include="Examples\Design Patterns\Behaviour\Strategy\Controllers\BadPlayerController.cs" />
     <Compile Include="Examples\Design Patterns\Behaviour\Strategy\Controllers\GameObjectUpgradeController.cs" />
     <Compile Include="Examples\Design Patterns\Creational\Abstract\IGenerateRoute.cs" />
+    <Compile Include="Examples\Enums\PriorityType.cs" />
     <Compile Include="Examples\Interfaces\IUpgradeGameObject.cs" />
     <Compile Include="Examples\PlayerType.cs" />
     <Compile Include="Examples\Upgraders\UpgradePlayer.cs" />

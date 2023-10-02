@@ -1,4 +1,6 @@
-﻿namespace GD
+﻿using System.Collections.Generic;
+
+namespace GD
 {
     public class UpgradePlayerType : IUpgradeGameObject
     {
