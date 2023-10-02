@@ -96,11 +96,44 @@ namespace GD
 
         private void DemoCoreCollections()
         {
-            //arraylist
+            //arraylist - dynamic, un-typed (no <>), add and insert
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add("hello");
+            arrayList.Add(32);
+            arrayList.Add(false);
+            arrayList.Add(new Player("bob", 100, 1000, PlayerType.Mage));
+            arrayList.Insert(2, "some inserted data");
 
-            //list
+            for (int i = 0; i < arrayList.Count; i++)
+                Console.WriteLine(arrayList[i]);
+
+            //list - dynamic, typed (<>)
+            List<string> strList = new List<string>(20);
+            strList.Add("a"); strList.Add("b"); strList.Add("b");
+            strList.Insert(1, "z");
+            foreach (string s in strList)
+                Console.WriteLine(s);
 
             //sortedlist
+            SortedList<int, string> sortedList = new SortedList<int, string>();
+            sortedList.Add(7, "bea"); sortedList.Add(2, "mary");
+            sortedList.Add(4, "bob");
+
+            string name = sortedList[2];
+            Console.WriteLine(name);
+
+            Console.WriteLine("");
+
+            //BE CAREFUL - key will overwrite if the same as earlier key
+            //         sortedList.Add(2, "mary jane");
+
+            //we can create exotic structures with key,value pair
+            SortedList<Player, List<string>> pList = new SortedList<Player, List<string>>();
+
+            ICollection<int> keys = sortedList.Keys;
+
+            foreach (int key in keys)
+                Console.WriteLine(sortedList[key]);
 
             //dictionary
 
