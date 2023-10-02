@@ -135,9 +135,54 @@ namespace GD
             foreach (int key in keys)
                 Console.WriteLine(sortedList[key]);
 
-            //dictionary
+            Console.WriteLine("Dictionary....");
 
-            //hashset
+            //dictionary
+            Dictionary<string, Player> playerDict = new Dictionary<string, Player>();
+            playerDict.Add("alan", new Player("alan", 100, 2000, PlayerType.Scout));
+            playerDict.Add("bob", new Player("bob", 50, 100, PlayerType.Thief));
+
+            //can we overwrite with same key? (note: we couldnt in SortedList)
+            playerDict["bob"] = new Player("new bob", 200, 10, PlayerType.Mage);
+
+            Player thePlayer;
+            playerDict.TryGetValue("alan", out thePlayer);
+            Console.WriteLine(thePlayer.Name);
+
+            if (playerDict.ContainsKey("bob"))
+                Console.WriteLine("bob is there!");
+
+            ICollection<string> dictKeys = playerDict.Keys;
+
+            foreach (string key in dictKeys)
+                Console.WriteLine(playerDict[key].Name);
+
+            Dictionary<string, List<Player>> teams = new Dictionary<string, List<Player>>();
+
+            List<Player> pListBlue = new List<Player>
+            {
+                new Player("a", 100, 200, PlayerType.Thief),
+                 new Player("b", 500, 200, PlayerType.Priest),
+            };
+            teams.Add("blue team", pListBlue);
+
+            if (teams.ContainsKey("blue team"))
+            {
+                List<Player> players = teams["blue team"];
+                foreach (Player player in players)
+                    Console.WriteLine(player);
+            }
+
+            //hashset - grocery
+            HashSet<Player> sentinelSet = new HashSet<Player>();
+            List<Player> playerList = new List<Player>();
+
+            Player p1 = new Player("a", 100, 200, PlayerType.Thief);
+            if (!sentinelSet.Contains(p1))
+            {
+                sentinelSet.Add(p1);
+                playerList.Add(p1);
+            }
         }
 
         private void DemoSortingWithIComparer()
