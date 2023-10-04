@@ -55,6 +55,8 @@
     <Compile Include="Examples\Interfaces\IUpgradeGameObject.cs" />
     <Compile Include="Examples\PlayerType.cs" />
     <Compile Include="Examples\Upgraders\UpgradePlayer.cs" />
+    <Compile Include="Exercises\Collections\Exercise 1\PuchaseCollection.cs" />
+    <Compile Include="Exercises\Collections\Exercise 1\Purchase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,7 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Examples\Design Patterns\Structural\" />
-    <Folder Include="Exercises\Collections\Exercise 1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
