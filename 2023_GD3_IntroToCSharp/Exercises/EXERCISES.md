@@ -19,4 +19,4 @@ The code should allow the developer to perform the following:
 - [ ] Prevent **duplicate** purchases.
 - [ ] Store the purchases by **chronological order** and then by **purchase price** (highest first).
 
-[^1] : Normally we would not store a description as this would be replaced by an item ID
+[^1]: Normally we would not store a description as this would be replaced by an item ID
