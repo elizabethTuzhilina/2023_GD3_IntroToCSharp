@@ -60,9 +60,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Exercises\EXERCISES.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Examples\Design Patterns\Structural\" />
+    <Folder Include="Exercises\Collections\Exercise 1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
