@@ -1,13 +1,13 @@
 # 2023 - GD3 - Intro To CSharp
 
-## Overview ##
+## Overview 
 This repository contains code samples used to learn the basics of C# in preparation for the development of the code for this module.
 
-## Useful ##
-
+## Useful 
+- [Markdown](https://docs.github.com/en/enterprise-cloud@latest/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) in GitHub
 - Add emojis with [gitmoji](https://gitmoji.dev/) to your Git commits to improve readability
 
-## Table of Contents - General ##
+## Table of Contents - General 
 | Topic | Description | Additional Reading |
 | :---------------- | :--------------- | :--------------- | 
 | Namespace definition | Defining namespaces  | [Namespace](https://www.tutorialspoint.com/csharp/csharp_namespaces.htm) |
@@ -28,7 +28,7 @@ This repository contains code samples used to learn the basics of C# in preparat
 | Operator overloading | Adding useful arithmetic (e.g. +, *) and logical (e.g. ==) operators | [Operator Overloading](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading) |
 | SortedList | Using a SortedList, an enum (PriorityType), and a Strategy pattern to create a sorted upgrade controller | [SortedList](https://www.tutorialspoint.com/csharp/csharp_collections.htm)
 
-## Table of Contents - Design Patterns ##
+## Table of Contents - Design Patterns 
 | Topic | Description | Additional Reading |
 | :---------------- | :--------------- | :--------------- | 
 | Abstract Factory | Using the Abstract Factory pattern to make interchangeable components | [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory) |
@@ -50,10 +50,10 @@ This repository contains code samples used to learn the basics of C# in preparat
 - [x] Add demo for Strategy (GameObjectUpgradeController)
 
 ### To Do - Week 3
-- [ ] Add demo code for useful collections
+- [x] Add demo code for useful collections (Program::DemoCoreCollections)
 - [ ] Use IComparer in a collection (List::Sort(IComparer)) demo to indicat how to sort IUpgradeGameObject objects in the GameObjectUpgradeController
-- [ ] Add static readonly constants (e.g. Vector3.Zero) (see Vector3)
+- [ ] Add static readonly constants (see Purchase)
 - [ ] Add demo for deep/shallow copy using Clone (see Vector3)
 - [ ] Add protected on set properties (see Vector3)
 - [ ] Use 'out' in a function call (see Program)
-- [ ] ...to do...(delegate, readonly etc)
+- [ ] ...to do...(lambda, func, actio, delegate, readonly etc)
