@@ -14,7 +14,9 @@ and so any new purchases can be stored directly in a collection.
 
 The code should allow the developer to perform the following:
 
-- [ ] Create an entity to store the **purchase** data - you may decide on the data.
+- [ ] Create an entity to store the **purchase** data (unique purchase ID, price($), quantity, time, description[^1])
 - [ ] Store **multiple** purchases in a collection.
 - [ ] Prevent **duplicate** purchases.
 - [ ] Store the purchases by **chronological order** and then by **purchase price** (highest first).
+
+[^1] : Normally we would not store a description as this would be replaced by an item ID
